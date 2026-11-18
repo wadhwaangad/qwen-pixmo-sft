@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "data_dir": "data/pixmo-points-sft",
+  "output_dir": "outputs/run1",
+  "epochs": 2,
+  "batch_size": 64,
+  "micro_batch_size": 2,
+  "lr": 1e-05,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "warmup_frac": 0.03,
+  "weight_decay": 0.0,
+  "max_grad_norm": 1.0,
+  "seed": 0,
+  "max_pixels": 1048576,
+  "max_seq_len": 4096,
+  "heldout_frac": 0.02,
+  "weight_dtype": "bfloat16",
+  "num_workers": 6,
+  "gradient_checkpointing": true,
+  "log_every": 5,
+  "checkpoint_every": 25
+}
